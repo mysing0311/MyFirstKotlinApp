@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyFirstKotlinApp</string>
+    <string name="main_text">0</string>
+    <string name="random_heading">Here is a random number between 0 and %1d.</string>
+    <string name="click_instruction_head">COUNT: increase the no. by 3.</string>
+    <string name="rand_instruction_head">RANDOM: generate a no. btw 0 and the value of COUNT.</string>
+</resources>
