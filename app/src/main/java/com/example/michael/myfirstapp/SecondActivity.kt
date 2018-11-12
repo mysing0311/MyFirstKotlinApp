@@ -28,7 +28,7 @@ class SecondActivity : AppCompatActivity() {
         // Add one because the bound is exclusive
         if (count > 0) {
             // Add one because the bound is exclusive
-            randomInt = random.nextInt(count + 1)
+            randomInt = random.nextInt( count ) + 1
         }
 
         // Display the random number.

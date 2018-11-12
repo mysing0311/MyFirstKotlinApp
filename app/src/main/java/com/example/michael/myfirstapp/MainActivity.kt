@@ -3,7 +3,9 @@ package com.example.michael.myfirstapp
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import com.example.michael.myfirstapp.R.id.textView
 import kotlinx.android.synthetic.main.activity_main.textView
@@ -63,4 +65,17 @@ class MainActivity : AppCompatActivity() {
         startActivity(randomIntent)
     }
 
+    fun sendMessage(view: View) {
+        val editText = findViewById<EditText>(R.id.editText)
+        val message = editText.text.toString()
+        textView.text = message
+//        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+//            putExtra(EXTRA_MESSAGE, message)
+//        }
+        startActivity(intent)
+    }
+
+    fun resetNo(view: View) {
+        textView.text = getString(R.string.default_value)
+    }
 }
